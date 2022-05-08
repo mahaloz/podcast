@@ -1,5 +1,5 @@
-project: keybase-client
-target: keybase_nacl_enc
+project: podcast
+target: podcast-encoder
 
 cmds:
-  - cmd: /fuzz_keybase_nacl_enc
+  - cmd: /fuzz_podcast_encoder
