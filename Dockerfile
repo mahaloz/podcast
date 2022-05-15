@@ -15,5 +15,6 @@ RUN mkdir ~/gopath && \
     clang -fsanitize=fuzzer fuzz_podcast_encoder.a  -o fuzz_podcast_encoder && \
     cp fuzz_podcast_encoder /fuzz_podcast_encoder
 
+# chain to builder
 FROM golang:1.17
 COPY --from=builder /fuzz_podcast_encoder /
